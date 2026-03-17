@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>Food Recipe By Chan</title>
+<style>
+
+/*Styles the whole background*/
+body{
+background-color:  #f0f2f5;
+font-family: Arial, sans-serif;
+color: #333;
+line-height: 1,6;
+}
+
+/*Style the container of the recipe or ingredients list*/
+.container{
+background-color: white;
+max-width: 600px;
+margin: 50px auto;/*centers the box or container*/
+padding: 20px;
+border-radius: 10px/*rounds the box, making the corners more smooth or round*/
+box-shadow: 0px 4px 10px rgba(0,0,0,0.1);/*add a soft shadow or shade along the box*/
+}
+
+/*makes the image fit perfectly in the box*/
+img {
+width: 100%;
+border-radius: 8px;
+}
+
+h1 {
+color: #b22222;
+text-align: center;
+}
+
+/*For the price tag*/
+.price-tag {
+background-color: #2eec71;
+color: white;
+padding: 5px 15px;
+display: inline-block;
+border-radius: 20px;
+font-weight: bold;
+margin-bottom: 15px;
+}
+
+
+/*For the star rating*/
+
+.star {
+display: inline-block;
+cursor: pointer;
+color: #f1c40f;
+font-size: 24px;
+transition: transform 0.5s;
+}
+
+.star:hover {
+transform: scale(1.5) rotate(90deg);
+color: #e67e22;
+}
+
+.rating-text {
+display: inline-block;
+vertical-align: center;
+font-weight: bold;
+}
+
+
+/*for my flexbox*/
+
+.recipe-content {
+display: flex; /*activates the flexbox*/
+gap: 30px;  /*puts the said value as the gap between the two columns*/
+margin-top: 20px;
+flex-wrap: wrap;
+}
+
+.recipe-content > .column {
+flex: 1; /*makes both column takes equal space*/
+background: #fffdfa;
+padding: 15px;
+border: 1px solid #ddd;
+}
+
+
+/*for the button*/
+
+button {
+background-color: #e74c3c;
+color: white;
+padding: 10px 20px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+font-size: 16px;
+margin-top: 20px;
+width: 100%
+}
+
+button:hover {
+background-color: #c392b;
+}
+
+</style>
+
+<body>
+ 
+   <div class="container">
+     <div class="price-tag">Estimated Cost: ₱300</div>
+  <h1>Lutong Bahay: Chicken adobo</h1>
+
+ <div class="rating">
+  <span class="star">★</span>
+  <span class="star">★</span>
+  <span class="star">★</span>
+  <span class="star">★</span>
+  <span class="star-empty">☆</span>
+  <span class="rating-text">(4.0/5)</span>
+</div>
+
+  <p>Arguable the national dish of the Philippines! Savory, sour, and perfect with warm rice.</h1>
+
+   <img src="adobo.jpg" alt="Delicious Adobo">
+
+ <div class="recipe-content">
+    <div class="column">
+ 
+   <h3>Ingredients</h3>
+   <ul>
+
+    <li>500g Chicken pieces</li>
+    <li>1/2 cup of Soy sauce</li>
+    <li>1/3 cup of vinegar</li>
+    <li>4 cloves Garlic, crushed</li>
+    <li>2 Bay leaves</li>
+   </ul>
+     </div>
+
+    <div class="column">
+     <h3>Instructions</h3>
+   <ol>
+   
+    <li>Marinate the chicken in soy sauce and garlic for 30 minutes.</li>
+    <li>Pan-fry the chicken until it's golden brown.</li>
+    <li>Add the marinade,vinegar, and bay leaves. Simmer it until it's tender.</li>
+  
+    </ol>
+  </div>
+</div>
+
+  <button onclick="saySalamat()">Luto na! (Done Cooking)</button>
+
+   <script>
+      function saySalamat() {
+     alert("Salamat! Enjoy your delicious Adobo with extra rice! 🍚");
+     document.body.style.backgroundColor = "#ffeaa7";
+}
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
